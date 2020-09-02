@@ -4,8 +4,8 @@ import study.pattern.visitor.member.Member;
 
 public interface Benefit {
   
-  void point();
+  void point(Member member);
   
-  void discount();
+  void discount(Member member);
   
 }
