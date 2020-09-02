@@ -1,9 +1,7 @@
 package study.pattern.visitor.member;
 
-public interface Member {
+import study.pattern.visitor.benefit.Benefit;
 
-  void point();
-  
-  void discount();
-  
+public interface Member extends Benefit {
+
 }
