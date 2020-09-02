@@ -1,11 +1,12 @@
 package study.pattern.visitor.benefit;
 
-import study.pattern.visitor.member.Member;
+import study.pattern.visitor.member.GoldMember;
+import study.pattern.visitor.member.VipMember;
 
 public interface Benefit {
   
-  void point(Member member);
+  void getBenefit(GoldMember member);
   
-  void discount(Member member);
+  void getBenefit(VipMember member);
   
 }
