@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-10-07T04:44:16.820Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36" etag="-BdQVRDbO4pmiRYReDV8" version="13.7.7" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2020-10-07T04:46:30.899Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36" etag="2ji3YfoARF3xTEg0_Cgo" version="13.7.7" type="github" pages="3">
   <diagram id="-A4pKn84wvYaUymURofo" name="Agent 실행">
     <mxGraphModel dx="807" dy="798" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -496,7 +496,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="lffR00yhORCMRe2HmN53" name="Agent DB 캐시">
-    <mxGraphModel dx="-228" dy="939" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="268" dy="939" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="TRfc0iN9wrIWuQNUJOql-0" />
         <mxCell id="TRfc0iN9wrIWuQNUJOql-1" parent="TRfc0iN9wrIWuQNUJOql-0" />
@@ -511,11 +511,6 @@
         <UserObject label="DB 캐시 끝" lucidchartObjectId="UkjCKOFqEdq9" id="TRfc0iN9wrIWuQNUJOql-3">
           <mxCell style="html=1;whiteSpace=wrap;rounded=1;arcSize=50;whiteSpace=wrap;fontSize=13;fontColor=#3d4752;align=center;spacing=9;strokeColor=#3d4752;strokeOpacity=100;fillOpacity=100;shadow=1;fillColor=#ffdba9;strokeWidth=2;fontFamily=Helvetica;" vertex="1" zOrder="112" parent="TRfc0iN9wrIWuQNUJOql-1">
             <mxGeometry x="1826" y="1000" width="108" height="48" as="geometry" />
-          </mxCell>
-        </UserObject>
-        <UserObject label="어플리케이션에서 DB Connection 을 요청" lucidchartObjectId="TujC~g_oZXIJ" id="TRfc0iN9wrIWuQNUJOql-4">
-          <mxCell style="html=1;whiteSpace=wrap;shape=parallelogram;perimeter=parallelogramPerimeter;anchorPointDirection=0;whiteSpace=wrap;fontSize=13;fontColor=#3d4752;align=center;spacing=3;strokeColor=#3d4752;strokeOpacity=100;fillOpacity=100;shadow=1;fillColor=#ffffff;strokeWidth=2;fontFamily=Helvetica;size=0.046875;" vertex="1" zOrder="120" parent="TRfc0iN9wrIWuQNUJOql-1">
-            <mxGeometry x="1800" y="150" width="160" height="60" as="geometry" />
           </mxCell>
         </UserObject>
         <UserObject label="캐시 활성화&lt;br&gt;여부" lucidchartObjectId="vFjC_WtNV4VZ" id="TRfc0iN9wrIWuQNUJOql-5">
@@ -657,9 +652,6 @@
             <mxGeometry x="2180" y="450" width="120" height="58" as="geometry" />
           </mxCell>
         </UserObject>
-        <mxCell id="16MPW3PXaVyT41rzRCR0-2" value="ApMaxPreparedStatement&lt;br&gt;#execute(java.lang.String)" style="text;whiteSpace=wrap;html=1;fontSize=13;fontFamily=Helvetica;verticalAlign=bottom;" vertex="1" parent="TRfc0iN9wrIWuQNUJOql-1">
-          <mxGeometry x="1890" y="120" width="280" height="30" as="geometry" />
-        </mxCell>
         <mxCell id="16MPW3PXaVyT41rzRCR0-5" value="CacheVO&lt;br&gt;#isNoneMode()" style="text;whiteSpace=wrap;html=1;fontSize=13;fontFamily=Helvetica;verticalAlign=bottom;align=right;" vertex="1" parent="TRfc0iN9wrIWuQNUJOql-1">
           <mxGeometry x="1770" y="290" width="100" height="30" as="geometry" />
         </mxCell>
@@ -739,6 +731,9 @@
             <mxPoint x="12" y="3.59" as="offset" />
           </mxGeometry>
         </mxCell>
+        <mxCell id="qcgbi3aQZdH7kGGuuUay-0" value="SQL 실행" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;shadow=1;strokeColor=#000000;strokeWidth=1;gradientColor=none;fontFamily=Helvetica;fontSize=13;align=center;" vertex="1" parent="TRfc0iN9wrIWuQNUJOql-1">
+          <mxGeometry x="1850" y="580" width="120" height="50" as="geometry" />
+        </mxCell>
         <UserObject label="" lucidchartObjectId="gljCJS.0c2aK" id="qcgbi3aQZdH7kGGuuUay-2">
           <mxCell style="html=1;jettySize=18;whiteSpace=wrap;fontSize=13;strokeColor=#494949;strokeWidth=2;rounded=1;arcSize=0;edgeStyle=orthogonalEdgeStyle;startArrow=none;;endArrow=block;endFill=1;;exitX=1;exitY=0.5;fontFamily=Helvetica;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="TRfc0iN9wrIWuQNUJOql-1" source="16MPW3PXaVyT41rzRCR0-0" target="16MPW3PXaVyT41rzRCR0-10">
             <mxGeometry width="100" height="100" relative="1" as="geometry">
@@ -756,39 +751,44 @@
             <mxPoint x="-48.81999999999999" y="1" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="qcgbi3aQZdH7kGGuuUay-6" value="" style="group" vertex="1" connectable="0" parent="TRfc0iN9wrIWuQNUJOql-1">
-          <mxGeometry x="2020" y="680" width="270" height="95" as="geometry" />
+        <UserObject label="java.sql.PreparedStatement&lt;br&gt;#execute()" link="java.sql.PreparedStatement#execute" id="TRfc0iN9wrIWuQNUJOql-13">
+          <mxCell style="text;whiteSpace=wrap;html=1;fontSize=13;fontFamily=Helvetica;verticalAlign=bottom;align=right;" vertex="1" parent="TRfc0iN9wrIWuQNUJOql-1">
+            <mxGeometry x="1700" y="528" width="170" height="50" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="pIwSrZ5FTvW6WHdobQLV-1" value="" style="group" vertex="1" connectable="0" parent="TRfc0iN9wrIWuQNUJOql-1">
+          <mxGeometry x="2020" y="730" width="270" height="95" as="geometry" />
         </mxCell>
         <UserObject label="서버에 캐시 &lt;br&gt;데이터 전송" lucidchartObjectId="TujC~g_oZXIJ" id="CTq3ti3ezXjVOQnmaFoT-0">
-          <mxCell style="html=1;whiteSpace=wrap;shape=parallelogram;perimeter=parallelogramPerimeter;anchorPointDirection=0;whiteSpace=wrap;fontSize=13;fontColor=#3d4752;align=center;spacing=3;strokeColor=#3d4752;strokeOpacity=100;fillOpacity=100;shadow=1;fillColor=#ffffff;strokeWidth=2;fontFamily=Helvetica;size=0.046875;" vertex="1" zOrder="120" parent="qcgbi3aQZdH7kGGuuUay-6">
-            <mxGeometry x="170" y="85" width="100" height="60" as="geometry" />
+          <mxCell style="html=1;whiteSpace=wrap;shape=parallelogram;perimeter=parallelogramPerimeter;anchorPointDirection=0;whiteSpace=wrap;fontSize=13;fontColor=#3d4752;align=center;spacing=3;strokeColor=#3d4752;strokeOpacity=100;fillOpacity=100;shadow=1;fillColor=#ffffff;strokeWidth=2;fontFamily=Helvetica;size=0.046875;" vertex="1" zOrder="120" parent="pIwSrZ5FTvW6WHdobQLV-1">
+            <mxGeometry x="170" y="35" width="100" height="60" as="geometry" />
           </mxCell>
         </UserObject>
-        <mxCell id="qcgbi3aQZdH7kGGuuUay-4" value="ApMaxConnector&lt;br&gt;#sendRequest(CacheRequest)" style="text;whiteSpace=wrap;html=1;fontSize=13;fontFamily=Helvetica;align=right;verticalAlign=bottom;" vertex="1" parent="qcgbi3aQZdH7kGGuuUay-6">
+        <mxCell id="qcgbi3aQZdH7kGGuuUay-4" value="ApMaxConnector&lt;br&gt;#sendRequest(CacheRequest)" style="text;whiteSpace=wrap;html=1;fontSize=13;fontFamily=Helvetica;align=right;verticalAlign=bottom;" vertex="1" parent="pIwSrZ5FTvW6WHdobQLV-1">
           <mxGeometry width="210" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="qcgbi3aQZdH7kGGuuUay-7" value="" style="group" vertex="1" connectable="0" parent="TRfc0iN9wrIWuQNUJOql-1">
-          <mxGeometry x="2060" y="810" width="230" height="95" as="geometry" />
+        <mxCell id="pIwSrZ5FTvW6WHdobQLV-3" value="" style="group" vertex="1" connectable="0" parent="TRfc0iN9wrIWuQNUJOql-1">
+          <mxGeometry x="2060" y="860" width="230" height="95" as="geometry" />
         </mxCell>
         <UserObject label="캐시 데이터&lt;br&gt;역직렬화&amp;nbsp;수행" lucidchartObjectId="oRjCTuPeWTr6" id="16MPW3PXaVyT41rzRCR0-10">
-          <mxCell style="html=1;whiteSpace=wrap;;whiteSpace=wrap;fontSize=13;fontColor=#3d4752;align=center;spacing=7;strokeColor=#3d4752;strokeOpacity=100;fillOpacity=100;shadow=1;fillColor=#ffffff;strokeWidth=2;fontFamily=Helvetica;" vertex="1" zOrder="138" parent="qcgbi3aQZdH7kGGuuUay-7">
-            <mxGeometry x="130" y="85" width="100" height="60" as="geometry" />
+          <mxCell style="html=1;whiteSpace=wrap;;whiteSpace=wrap;fontSize=13;fontColor=#3d4752;align=center;spacing=7;strokeColor=#3d4752;strokeOpacity=100;fillOpacity=100;shadow=1;fillColor=#ffffff;strokeWidth=2;fontFamily=Helvetica;" vertex="1" zOrder="138" parent="pIwSrZ5FTvW6WHdobQLV-3">
+            <mxGeometry x="130" y="35" width="100" height="60" as="geometry" />
           </mxCell>
         </UserObject>
-        <mxCell id="qcgbi3aQZdH7kGGuuUay-5" value="CacheService&lt;br&gt;#getCache(CacheVO)" style="text;whiteSpace=wrap;html=1;fontSize=13;fontFamily=Helvetica;verticalAlign=bottom;align=right;" vertex="1" parent="qcgbi3aQZdH7kGGuuUay-7">
+        <mxCell id="qcgbi3aQZdH7kGGuuUay-5" value="CacheService&lt;br&gt;#getCache(CacheVO)" style="text;whiteSpace=wrap;html=1;fontSize=13;fontFamily=Helvetica;verticalAlign=bottom;align=right;" vertex="1" parent="pIwSrZ5FTvW6WHdobQLV-3">
           <mxGeometry width="170" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="pIwSrZ5FTvW6WHdobQLV-0" value="" style="group" vertex="1" connectable="0" parent="TRfc0iN9wrIWuQNUJOql-1">
-          <mxGeometry x="1700" y="528" width="270" height="102" as="geometry" />
+        <mxCell id="pIwSrZ5FTvW6WHdobQLV-4" value="" style="group" vertex="1" connectable="0" parent="TRfc0iN9wrIWuQNUJOql-1">
+          <mxGeometry x="1800" y="140" width="370" height="90" as="geometry" />
         </mxCell>
-        <mxCell id="qcgbi3aQZdH7kGGuuUay-0" value="SQL 실행" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;shadow=1;strokeColor=#000000;strokeWidth=1;gradientColor=none;fontFamily=Helvetica;fontSize=13;align=center;" vertex="1" parent="pIwSrZ5FTvW6WHdobQLV-0">
-          <mxGeometry x="150" y="52" width="120" height="50" as="geometry" />
-        </mxCell>
-        <UserObject label="java.sql.PreparedStatement&lt;br&gt;#execute()" link="java.sql.PreparedStatement#execute" id="TRfc0iN9wrIWuQNUJOql-13">
-          <mxCell style="text;whiteSpace=wrap;html=1;fontSize=13;fontFamily=Helvetica;verticalAlign=bottom;align=right;" vertex="1" parent="pIwSrZ5FTvW6WHdobQLV-0">
-            <mxGeometry width="170" height="50" as="geometry" />
+        <UserObject label="어플리케이션에서 DB Connection 을 요청" lucidchartObjectId="TujC~g_oZXIJ" id="TRfc0iN9wrIWuQNUJOql-4">
+          <mxCell style="html=1;whiteSpace=wrap;shape=parallelogram;perimeter=parallelogramPerimeter;anchorPointDirection=0;whiteSpace=wrap;fontSize=13;fontColor=#3d4752;align=center;spacing=3;strokeColor=#3d4752;strokeOpacity=100;fillOpacity=100;shadow=1;fillColor=#ffffff;strokeWidth=2;fontFamily=Helvetica;size=0.046875;" vertex="1" zOrder="120" parent="pIwSrZ5FTvW6WHdobQLV-4">
+            <mxGeometry y="30" width="160" height="60" as="geometry" />
           </mxCell>
         </UserObject>
+        <mxCell id="16MPW3PXaVyT41rzRCR0-2" value="ApMaxPreparedStatement&lt;br&gt;#execute(java.lang.String)" style="text;whiteSpace=wrap;html=1;fontSize=13;fontFamily=Helvetica;verticalAlign=bottom;" vertex="1" parent="pIwSrZ5FTvW6WHdobQLV-4">
+          <mxGeometry x="90" width="280" height="30" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
